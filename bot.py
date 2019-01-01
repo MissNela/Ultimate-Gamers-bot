@@ -1,4 +1,3 @@
-
 import discord
 from discord.ext import commands
 from discord.ext.commands.cooldowns import BucketType
@@ -36,6 +35,4 @@ async def ping(ctx):
       t2 = time.perf_counter()
       await client.say("Ping: {}ms".format(round((t2-t1)*1000)))
 
-client.run(os.getenv("BOT-T")  
-  
-  
+client.run(os.getenv("BOT-T")
