@@ -54,7 +54,7 @@ async def on_reaction_add(reaction, user):
       if reaction.emoji == '🇬':
           index = 0
           while True:
-              msg = await client.send_message(message.channel,embed=gen_cmd[index])
+              msg = await client.send_message(message.author, embed=gen_cmd[index])
               l = index != 0
               r = index != len(gen_cmd) - 1
               if l:
@@ -70,7 +70,7 @@ async def on_reaction_add(reaction, user):
       if reaction.emoji == '🇲':
           index = 0
           while True:
-              msg = await client.send_message(message.channel, embed=mod_cmd[index])
+              msg = await client.send_message(message.author, embed=mod_cmd[index])
               l = index != 0
               r = index != len(mod_cmd) - 1
               if l:
@@ -103,8 +103,8 @@ async def help(ctx):
     embed.set_footer(text="Pomoc potřeboval/a {}".format(ctx.message.author.display_name))
     reaction1 = '🇲'
     reaction2 = '🇬'
-    await client.add_reaction(ctx.message, reaction1)
-    await client.add_reaction(ctx.message, reaction2)
+    await client.add_reaction(dmmessage, reaction1)
+    await client.add_reaction(dmmessage, reaction2)
      
     await client.say(embed=embed)
     
