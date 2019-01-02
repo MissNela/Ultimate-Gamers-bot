@@ -101,7 +101,7 @@ async def help(ctx):
     embed.add_field(name = "Přidej reakci 🇲",value = "Pro pomoc s moderátorskýmy příkazy!",inline=False)
     embed.add_field(name = "Přidej reakci 🇬",value = "Pro pomoc s přílazy pro všechny!",inline=False)
     embed.set_footer(text="Pomoc potřeboval/a {}".format(ctx.message.author.display_name))
-    dmmessage = await client.send_message(author,embed=embed)
+    dmmessage = await client.send_message(ctx.message.author, embed=embed)
     reaction1 = '🇲'
     reaction2 = '🇬'
     await client.add_reaction(dmmessage, reaction1)
