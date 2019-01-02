@@ -99,7 +99,7 @@ async def ping(ctx):
 async def help(ctx):
     embed = discord.Embed(title="Pomoc!", color = 0x66BB6A)
     embed.add_field(name = "Přidej reakci 🇲",value = "Pro pomoc s moderátorskýmy příkazy!",inline=False)
-    embed.add_field(name = "Přidej reakci 🇬",value = "Pro pomoc s přílazy pro všechny!",inlune=False)
+    embed.add_field(name = "Přidej reakci 🇬",value = "Pro pomoc s přílazy pro všechny!",inline=False)
     embed.set_footer(text="Pomoc potřeboval/a {}".format(ctx.message.author.display_name))
     reaction1 = '🇲'
     reaction2 = '🇬'
