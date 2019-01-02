@@ -22,11 +22,11 @@ client.remove_command('help')
 left = '⏪'
 right = '⏩'
 r, g, b = tuple(int(x * 255) for x in colorsys.hsv_to_rgb(random.random(), 1, 1))
-general1=discord.Embed(title = "Příkazy pro všechny!")
+general1=discord.Embed(title = "Příkazy pro všechny!", color = discord.Color((r << 16) + (g << 8) + b))
 general1.add_field(name = "Ug!ping", value = "Ukáže ti ping bota!",inline=False)
-general2=discord.Embed(title = "Připravuje se!")
-mod1=discord.Embed(title="Připravuje se!")
-mod2=discord.Embed(title="Připravuje se!")
+general2=discord.Embed(title = "Připravuje se!", color = discord.Color((r << 16) + (g << 8) + b))
+mod1=discord.Embed(title="Připravuje se!", color = discord.Color((r << 16) + (g << 8) + b))
+mod2=discord.Embed(title="Připravuje se!", color = discord.Color((r << 16) + (g << 8) + b))
 
 gen_cmd = (general1, general2)
 mod_cmd = (mod1, mod2)
