@@ -101,6 +101,11 @@ async def help(ctx):
     embed.add_field(name = "Přidej reakci 🇲",value = "Pro pomoc s moderátorskýmy příkazy!",inline=False)
     embed.add_field(name = "Přidej reakci 🇬",value = "Pro pomoc s přílazy pro všechny!",inlune=False)
     embed.set_footer(text="Pomoc potřeboval/a {}".format(ctx.message.author.display_name))
+    reaction1 = '🇲'
+    reaction2 = '🇬'
+    await client.add_reaction(ctx.message, reaction1)
+    await client.add_reaction(ctx.message, reaction2)
+     
     await client.say(embed=embed)
     
 client.run(os.getenv("BOT_TOKEN"))
