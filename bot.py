@@ -36,3 +36,4 @@ async def ping(ctx):
       await client.say("Ping: {}ms".format(round((t2-t1)*1000)))
 
 client.run(os.getenv("BOT_TOKEN")
+#sjsisidudu
