@@ -32,7 +32,7 @@ gen_cmd = (general1, general2)
 mod_cmd = (mod1, mod2)
 
 
-@cliedef predicate(message, l, r)
+def predicate(message, l, r)
     def check(reaction, user):
         if reaction.message.id != message.id or user == client.user:
             return False
