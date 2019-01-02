@@ -49,7 +49,7 @@ async def on_ready():
     print('Jsem tu :D')
 
 @client.event
-async def on_reaction_add(reaction, user):
+async def on_reaction_add(reaction, user, message):
   if reaction.message.server is None:
       if reaction.emoji == '🇬':
           index = 0
