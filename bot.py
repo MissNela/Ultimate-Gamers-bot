@@ -52,7 +52,7 @@ async def help(ctx):
     await client.add_reaction(dmmessage, reaction1)
     await client.add_reaction(dmmessage, reaction2)
      
-    await client.send_message(ctx.message.author, embed=
+ 
                               
     
 client.run(os.getenv("BOT_TOKEN"))
