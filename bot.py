@@ -45,7 +45,7 @@ async def help(ctx):
     embed.add_field(name = "ping",value = "Bot ti ukáže jeho ping :joy:",inline=False)
     embed.add_field(name = "To je vse",value = "------------",inline=False)
     embed.set_footer(text="Pomoc potřeboval/a {}".format(ctx.message.author.display_name))
-    embed.add_field(name="Pomohlo ti to?",value = "Ano :white_check_mark: Ne :x:
+    embed.add_field(name="Pomohlo ti to?",value = "Ano :white_check_mark: Ne :x:",inline=False)
     dmmessage = await client.send_message(ctx.message.author, embed=embed)
     reaction1 = '✅'
     reaction2 = '❌'
